@@ -1,0 +1,65 @@
+[17-Mar-2022 22:04:47 Asia/Jakarta] PHP Warning:  require(/home/ueln2381/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ueln2381/public_html/index.php on line 34
+[17-Mar-2022 22:04:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ueln2381/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ueln2381/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ueln2381/public_html/index.php on line 34
+[17-Mar-2022 22:14:52 Asia/Jakarta] PHP Warning:  require(/home/ueln2381/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ueln2381/public_html/index.php on line 34
+[17-Mar-2022 22:14:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ueln2381/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ueln2381/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ueln2381/public_html/index.php on line 34
+[31-Mar-2022 22:50:20 Asia/Jakarta] PHP Warning:  require(/home/ueln2381/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ueln2381/public_html/index.php on line 34
+[31-Mar-2022 22:50:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ueln2381/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ueln2381/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ueln2381/public_html/index.php on line 34
+[31-Mar-2022 22:50:22 Asia/Jakarta] PHP Warning:  require(/home/ueln2381/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ueln2381/public_html/index.php on line 34
+[31-Mar-2022 22:50:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ueln2381/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ueln2381/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ueln2381/public_html/index.php on line 34
+[31-Mar-2022 22:50:34 Asia/Jakarta] PHP Warning:  require(/home/ueln2381/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ueln2381/public_html/index.php on line 34
+[31-Mar-2022 22:50:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ueln2381/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ueln2381/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ueln2381/public_html/index.php on line 34
+[31-Mar-2022 22:50:35 Asia/Jakarta] PHP Warning:  require(/home/ueln2381/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ueln2381/public_html/index.php on line 34
+[31-Mar-2022 22:50:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ueln2381/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ueln2381/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ueln2381/public_html/index.php on line 34
+[17-Apr-2022 22:34:23 Asia/Jakarta] PHP Warning:  include(/home/ueln2381/project_tugas_akhir/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php on line 571
+[17-Apr-2022 22:34:23 Asia/Jakarta] PHP Warning:  include(): Failed opening '/home/ueln2381/project_tugas_akhir/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php on line 571
+[17-Apr-2022 22:34:23 Asia/Jakarta] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home/ueln2381/public_html/index.php(55): Illuminate\Foundation\Application->make()
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home/ueln2381/public_html/index.php(55): Illuminate\Foundation\Application->make()
+#9 {main}
+  thrown in /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[17-Apr-2022 22:58:51 Asia/Jakarta] PHP Warning:  require(/home/ueln2381/public_html/../project_tugas_akhir/vendor/autoload.php): Failed to open stream: No such file or directory in /home/ueln2381/public_html/index.php on line 34
+[17-Apr-2022 22:58:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ueln2381/public_html/../project_tugas_akhir/vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ueln2381/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ueln2381/public_html/index.php on line 34
+[24-Jun-2022 05:38:34 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/ueln2381/project_tugas_akhir/app/Models/Nomorserial.php on line 40

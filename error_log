@@ -1,0 +1,27 @@
+[17-Apr-2022 22:37:29 Asia/Jakarta] PHP Fatal error:  Uncaught ErrorException: include(/home/ueln2381/project_tugas_akhir/vendor/composer/../nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php): Failed to open stream: No such file or directory in /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php:571
+Stack trace:
+#0 /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php(571): include()
+#2 /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/ueln2381/project_tugas_akhir/vendor/nunomaduro/collision/src/Adapters/Laravel/CollisionServiceProvider.php(50): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider->NunoMaduro\Collision\Adapters\Laravel\{closure}()
+#5 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home/ueln2381/project_tugas_akhir/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(65): Illuminate\Foundation\Application->make()
+#10 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(182): NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler->renderForConsole()
+#11 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(168): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole()
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#13 {main}
+  thrown in /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php on line 571
+[17-Apr-2022 22:37:29 Asia/Jakarta] PHP Fatal error:  Uncaught ErrorException: include(/home/ueln2381/project_tugas_akhir/vendor/composer/../symfony/error-handler/Error/FatalError.php): Failed to open stream: No such file or directory in /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php:571
+Stack trace:
+#0 /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php(571): include()
+#2 /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(217): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/ueln2381/project_tugas_akhir/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(204): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalErrorFromPhpError()
+#5 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#6 {main}
+  thrown in /home/ueln2381/project_tugas_akhir/vendor/composer/ClassLoader.php on line 571

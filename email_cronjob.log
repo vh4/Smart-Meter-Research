@@ -1,0 +1,383 @@
+program berhasil dijalankan
+program berhasil dijalankan
+program berhasil dijalankan
+program berhasil dijalankan
+program berhasil dijalankan
+program berhasil dijalankan
+program berhasil dijalankan
+kontolkontolkontolkontolkontolkontolkontolkontolkontolkontolkontolkontolkontolkontolkontolkontolkontolkontolkontolkontol
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+{"nomorserial_id":"NLRFQ-VVUL6-TZKES-NHIQK","user_id":"46","tanggal":"2022-06-24 12:15:36"}{"nomorserial_id":"9OHYM-7QEN0-6W40I-XAW6D","user_id":"47","tanggal":"2022-06-24 12:58:13"}{"nomorserial_id":"NLRFQ-VVUL6-TZKES-NHIQK","user_id":"46","tanggal":"2022-06-24 12:15:36"}{"nomorserial_id":"9OHYM-7QEN0-6W40I-XAW6D","user_id":"47","tanggal":"2022-06-24 12:58:13"}{"nomorserial_id":"NLRFQ-VVUL6-TZKES-NHIQK","user_id":"46","tanggal":"2022-06-24 12:15:36"}{"nomorserial_id":"9OHYM-7QEN0-6W40I-XAW6D","user_id":"47","tanggal":"2022-06-24 12:58:13"}{"nomorserial_id":"NLRFQ-VVUL6-TZKES-NHIQK","user_id":"46","tanggal":"2022-06-24 12:15:36"}{"nomorserial_id":"9OHYM-7QEN0-6W40I-XAW6D","user_id":"47","tanggal":"2022-06-24 12:58:13"}{"nomorserial_id":"NLRFQ-VVUL6-TZKES-NHIQK","user_id":"46","tanggal":"2022-06-24 12:15:36"}{"nomorserial_id":"9OHYM-7QEN0-6W40I-XAW6D","user_id":"47","tanggal":"2022-06-24 12:58:13"}{"nomorserial_id":"NLRFQ-VVUL6-TZKES-NHIQK","user_id":"46","tanggal":"2022-06-24 12:15:36"}{"nomorserial_id":"9OHYM-7QEN0-6W40I-XAW6D","user_id":"47","tanggal":"2022-06-24 12:58:13"}{"nomorserial_id":"NLRFQ-VVUL6-TZKES-NHIQK","user_id":"46","tanggal":"2022-06-24 12:15:36"}{"nomorserial_id":"9OHYM-7QEN0-6W40I-XAW6D","user_id":"47","tanggal":"2022-06-24 12:58:13"}{"nomorserial_id":"NLRFQ-VVUL6-TZKES-NHIQK","user_id":"46","tanggal":"2022-06-24 12:15:36"}{"nomorserial_id":"9OHYM-7QEN0-6W40I-XAW6D","user_id":"47","tanggal":"2022-06-24 12:58:13"}
+   ErrorException 
+
+  Undefined property: Illuminate\Database\Eloquent\Relations\HasOne::$datalistriks
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial()->datalistriks);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕ 
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "nomorserial_id" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:53
+     49▕         $user = User::all();
+     50▕ 
+     51▕         foreach($user as $x){
+     52▕             
+  ➜  53▕             $nilai_sisa_pulsa_listrik = Datalistrik::where('nomorserial_id', $x->nomorserial->nomorserial_id)->first();
+     54▕             
+     55▕             print($nilai_sisa_pulsa_listrik);
+     56▕             
+     57▕
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:53
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  Attempt to read property "nomorserial_id" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:55
+     51▕         foreach($user as $x){
+     52▕             
+     53▕ 
+     54▕             
+  ➜  55▕             print($x->nomorserial->nomorserial_id);
+     56▕             
+     57▕ 
+     58▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     59▕
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:55
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ParseError 
+
+  syntax error, unexpected token "}"
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:76
+     72▕                 
+     73▕ 
+     74▕                 Mail::to($email)->send(new \App\Mail\SendEmailPulsaHabis($nama, $pulsa_habis, $penggunaan_1_hari));
+     75▕                 print("mail terkirim!")
+  ➜  76▕             }
+     77▕         }
+     78▕         return 0;
+     79▕     }
+     80▕ }
+
+      [2m+1 vendor frames [22m
+  2   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+      [2m+1 vendor frames [22m
+  4   project_tugas_akhir/app/Console/Kernel.php:34
+      Illuminate\Foundation\Console\Kernel::load()
+
+   ErrorException 
+
+  Attempt to read property "datalistrik" on null
+
+  at project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+     48▕         $user = User::all();
+     49▕ 
+     50▕         foreach($user as $x){
+     51▕             
+  ➜  52▕             print($x->nomorserial->datalistrik->sisa_pulsa);
+     53▕             
+     54▕             if(($x->rules == 'user') && ($x->nomorserial->datalistrik->sisa_pulsa !== null) && ($x->nomorserial->datalistrik->sisa_pulsa < 1) && ($x->nomorserial->email->tanggal < Carbon::now()->subDay())){
+     55▕ 		
+     56▕ 		   Email::where('nomorserial_id', $x->nomorserial->nomorserial_id)->update([
+
+  1   project_tugas_akhir/app/Console/Commands/SendEmailPulsaHabis.php:52
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError()
+
+      [2m+13 vendor frames [22m
+  15  project_tugas_akhir/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+anjing2022-06-23 16:05:01
